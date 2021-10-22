@@ -20,7 +20,7 @@ class LikeButton extends React.Component {
 }
 
 // Encuentre todos los contenedores DOM y procese los botones Me gusta en ellos.
-const array = document.querySelectorAll('.like_button_container')
+document.querySelectorAll('.like_button_container')
 array.forEach(domContainer => {
     // Leer el ID de comentario de un atributo data.
     const commentID = parseInt(domContainer.dataset.commentid, 10);

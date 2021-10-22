@@ -4,22 +4,22 @@ class LikeButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      liked: false,
-      numero: 1
+      liked: false
     };
   }
     
   render() {
-    if (this.state.liked) {
-      return 'Te gusto el contenido';
-    }
-
     /*if (this.state.liked) {
+      return 'Te gusto el contenido';
+    }*/
+
+    if (this.state.liked) {
       return React.createElement(
         'input',
         {className: 'boton'}
+        
       );
-    }*/
+    }
 
     return React.createElement(
       'div',
